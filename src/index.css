@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* common style */
+.my-container{
+    @apply max-w-[1240px] mx-auto px-3
+}
+
+.my-inp{
+    box-shadow: 0px 7px 29px 0px #64646F33;
+    @apply block w-full p-3 bg-[#FFFFFF] text-slate-500 font-semibold placeholder:text-slate-400 border-none rounded focus:outline-none
+}
+
+.my-title{
+    @apply font-bold text-2xl lg:text-4xl
+}
+.my-subtitle{
+    @apply font-semibold text-xl lg:text-3xl text-[#001E43]
+}
+
+
+/* common button */
+.my-btn-one{
+    @apply inline-flex justify-center items-center gap-2 relative rounded px-5 py-2.5 overflow-hidden bg-[#001E43] hover:bg-gradient-to-r hover:bg-[#001e43a2] text-white transition-all duration-500 my-2 cursor-pointer
+}
+.my-btn-one-disable{
+    @apply inline-flex justify-center items-center gap-2 relative rounded px-5 py-2.5 bg-[#001E43] bg-opacity-25 text-white my-2 cursor-pointer
+}
