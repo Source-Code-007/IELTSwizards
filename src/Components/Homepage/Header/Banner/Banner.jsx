@@ -69,7 +69,7 @@ const Banner = () => {
                 </div>
             </div>
 
-            <img src={bannerImgBg} className='absolute right-0 top-0 -z-30' />
+            <img src={bannerImgBg} className='absolute right-0 top-0 -z-30 opacity-50' />
         </div>
     );
 };

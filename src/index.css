@@ -28,3 +28,10 @@
 .my-btn-one-disable{
     @apply inline-flex justify-center items-center gap-2 relative rounded px-5 py-2.5 bg-[#001E43] bg-opacity-25 text-white my-2 cursor-pointer
 }
+
+
+/* services section */
+.my-service{
+    background:  linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%);
+    border: 1px solid #fafafa1c;
+}
