@@ -29,7 +29,6 @@ const Services = () => {
         },
     ]
 
-    // TODO: service card overflow issue
     return (
         <div className='bg-gradient-to-r from-[#001E43] to-[#570169] rounded-[105px] overflow-hidden'>
             <div className='grid grid-cols-1 md:grid-cols-2  items-center px-6 md:px-10 lg:px-16'>
@@ -41,7 +40,7 @@ const Services = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-24 md:gap-16'>
                         {
                             services.map((service, ind) => {
-                                return <div key={ind} className='rounded-[40px] bg-[#0D1948] relative text-center text-white my-service overflow-hidden'>
+                                return <div key={ind} className='rounded-[40px] bg-[#0D1948] relative text-center text-white my-service '>
                                     <figure className='bg-[#FFFFFF] h-20 w-20 rounded-3xl flex items-center justify-center absolute left-10 -top-10'><img src={service.icon} /></figure>
                                     <div className='py-16 px-4 space-y-4'>
                                         <h2 className='text-[28px] font-semibold'>{service.title}</h2>

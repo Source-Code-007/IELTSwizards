@@ -27,7 +27,7 @@ const ClassesSection = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12'>
                 {
                     classes.map((classP, ind) => {
-                        return <div key={ind} className='rounded-[40px] bg-[#0D1948] p-5 relative text-center text-white space-y-4' style={{ boxShadow: '0px 4px 60px 0px #0D194870' }}>
+                        return <div key={ind} className='rounded-[40px] bg-[#0D1948] p-5 relative text-center text-white space-y-4 my-shadow'>
                             <figure className='bg-[#FFFFFF] h-20 w-20 rounded-full flex items-center justify-center mx-auto'><img src={classP.img} /></figure>
                             <h2 className='text-[28px] font-semibold'>{classP.title}</h2>
                             <p className='text-slate-400'>{classP.subTitle}</p>
