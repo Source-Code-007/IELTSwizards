@@ -14,6 +14,7 @@ const Testimonial = () => {
         setCurrentSlide((prevSlide) => (prevSlide === 1 ? totalSlides : prevSlide - 1));
     };
 
+    
     return (
         <div className="flex flex-col items-center my-24 py-28 bg-gray-100">
             <div className="relative w-full overflow-hidden">
