@@ -15,7 +15,7 @@ const Testimonial = () => {
     };
 
     return (
-        <div className="flex flex-col items-center my-24 bg-gray-100">
+        <div className="flex flex-col items-center my-24 py-28 bg-gray-100">
             <div className="relative w-full overflow-hidden">
                 <div
                     className="flex transition-transform ease-in-out duration-300"
@@ -27,9 +27,9 @@ const Testimonial = () => {
                     {Array.from({ length: totalSlides }).map((_, index) => (
                         <div
                             key={index}
-                            className="w-full my-24 p-4 rounded-lg flex flex-col items-center justify-center overflow-hidden"
+                            className="w-full rounded-lg flex flex-col items-center justify-center overflow-hidden"
                         >
-                            <div className='rounded-[40px] w-[1163px] bg-[#ffffff] p-14 py-32 pr-96 my-shadow space-y-14 relative'>
+                            <div className='rounded-[40px] w-[1163px] bg-[#ffffff] p-14 py-32 pr-96 space-y-14 relative'>
                                 <h2 className='my-title relative pb-3 after:h-px after:w-32 after:bg-slate-700 after:absolute after:top-full after:left-0'>Freda Collier</h2>
                                 <div className='relative'>
                                     <span><FaQuoteLeft></FaQuoteLeft></span>
@@ -39,7 +39,7 @@ const Testimonial = () => {
                                 <div className='flex gap-2'>
                                     {[1, 2, 3, 4, 5].map((elem, ind) => <span key={ind}><FaStar></FaStar></span>)}
                                 </div>
-                                
+
 
                                 {/* img */}
                                 <div className='absolute right-10 top-20'>
@@ -51,25 +51,27 @@ const Testimonial = () => {
                                 <div className='testimonial-triangle'></div>
 
                             </div>
+
+
+                            {/* button */}
+                            <div className="flex mt-4 -translate-x-60">
+                                <button
+                                    className="text-slate-700 font-bold py-2 px-4 rounded-l"
+                                    onClick={prevSlide}
+                                >
+                                    <FaArrowLeft></FaArrowLeft>
+                                </button>
+                                <div className=" text-gray-700 font-bold py-2 px-4">
+                                    <span className='text-3xl'>{currentSlide < 10 ? `0${currentSlide}` : `${currentSlide}`}</span> / {totalSlides}
+                                </div>
+                                <button
+                                    className="text-slate-700 font-bold py-2 px-4 rounded-r"
+                                    onClick={nextSlide}
+                                >
+                                    <FaArrowRight></FaArrowRight>
+                                </button>
+                            </div>
                             
-                                        {/* button */}
-            <div className="flex mt-4">
-                <button
-                    className="text-slate-700 font-bold py-2 px-4 rounded-l"
-                    onClick={prevSlide}
-                >
-                    <FaArrowLeft></FaArrowLeft>
-                </button>
-                <div className="bg-gray-200 text-gray-700 font-bold py-2 px-4">
-                    {currentSlide} / {totalSlides}
-                </div>
-                <button
-                    className="text-slate-700 font-bold py-2 px-4 rounded-r"
-                    onClick={nextSlide}
-                >
-                    <FaArrowRight></FaArrowRight>
-                </button>
-            </div>
                         </div>
                     ))}
                 </div>
