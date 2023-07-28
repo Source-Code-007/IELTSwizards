@@ -31,7 +31,7 @@ const ClassesSection = () => {
                             <figure className='bg-[#FFFFFF] h-20 w-20 rounded-full flex items-center justify-center mx-auto'><img src={classP.img} /></figure>
                             <h2 className='text-[28px] font-semibold'>{classP.title}</h2>
                             <p className='text-slate-400'>{classP.subTitle}</p>
-                            <img src={classCardBg} className='absolute right-0 top-0 opacity-70' />
+                            <img src={classCardBg} className='absolute right-0 top-0 opacity-70 !mt-0' />
                         </div>
                     })
                 }
